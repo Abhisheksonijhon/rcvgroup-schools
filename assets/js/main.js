@@ -28,3 +28,91 @@ nv.querySelectorAll("button.t").forEach(b=>b.onclick=()=>b.setAttribute("aria-ex
 document.onkeydown=e=>{if(e.key==="Escape"){lb.classList.remove("on");nv.classList.remove("open");document.querySelectorAll("#nv li.open").forEach(l=>l.classList.remove("open"))}};
 const lb=document.getElementById("lb");lb.onclick=()=>lb.classList.remove("on");
 document.querySelectorAll(".gal img,.lab img").forEach(i=>i.onclick=()=>{lb.firstChild.src=i.src;lb.firstChild.alt=i.alt;lb.classList.add("on")});
+
+/* RCV POLISH PHASE 1 */
+(() => {
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  // Keep the copyright year current.
+  const year = document.getElementById("copyright-year");
+  if (year) year.textContent = String(new Date().getFullYear());
+
+  // Improve image decoding and defer images that are well below the fold.
+  document.querySelectorAll("main img").forEach((img) => {
+    if (!img.hasAttribute("decoding")) {
+      img.decoding = "async";
+    }
+
+    const rect = img.getBoundingClientRect();
+    const isLikelyBelowFold =
+      rect.top > Math.max(window.innerHeight * 1.2, 900);
+
+    const isHeroImage = img.closest(".hero");
+
+    if (
+      isLikelyBelowFold &&
+      !isHeroImage &&
+      !img.hasAttribute("loading")
+    ) {
+      img.loading = "lazy";
+    }
+  });
+
+  // Close the mobile navigation after selecting a destination.
+  const nav = document.getElementById("nv");
+  const menu = document.querySelector(".menu");
+
+  if (nav && menu) {
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        menu.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  // Reveal content gently as it enters the viewport.
+  // Unsupported browsers and reduced-motion users keep content visible.
+  if (
+    reduceMotion ||
+    !("IntersectionObserver" in window)
+  ) {
+    return;
+  }
+
+  const targets = document.querySelectorAll(
+    "main > section, main .stats, main .card, main .msg, main .notice"
+  );
+
+  if (!targets.length) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: "0px 0px -40px 0px",
+    threshold: 0.08
+  });
+
+  targets.forEach((element) => {
+    element.classList.add("reveal");
+    observer.observe(element);
+  });
+
+  document.body.classList.add("motion-ready");
+
+  // Fail-safe: never leave content hidden if observation stalls.
+  window.setTimeout(() => {
+    targets.forEach((element) => {
+      element.classList.add("is-visible");
+    });
+    observer.disconnect();
+  }, 8000);
+})();

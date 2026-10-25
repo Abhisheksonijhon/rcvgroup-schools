@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rcvgroup-schools.vercel.app/sitemap.xml
+Sitemap: https://rcvschools.vercel.app/sitemap.xml

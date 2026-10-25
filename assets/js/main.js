@@ -2,7 +2,7 @@ const P="+918871514166";
 const nav=[["index.html","मुख्य पृष्ठ","Home"],
 ["हमारे बारे में","About",[["about.html","विद्यालय परिचय","About Us"],["director.html","संचालक संदेश","Director"]]],
 ["शिक्षा","Academics",[["academics.html","शैक्षणिक","Academics"],["results.html","परीक्षा परिणाम","Results"],["gyankosh.html","ज्ञानकोश","Gyankosh"]]],
-["परिसर","Campus",[["infrastructure.html","सुविधाएँ","Infrastructure"],["boarding.html","छात्रावास","Hostel"],["gallery.html","फ़ोटो गैलरी","Gallery"]]],
+["परिसर","Campus",[["infrastructure.html","सुविधाएँ","Infrastructure"],["library.html","Tanishqe Library","Study Space"],["boarding.html","छात्रावास","Hostel"],["gallery.html","फ़ोटो गैलरी","Gallery"]]],
 ["activities.html","गतिविधियाँ","Activities"],["updates.html","सूचनाएँ","Notices"],["contact.html","संपर्क","Contact"]];
 const cur=location.pathname.split("/").pop()||"index.html";
 const a=(h,t,e)=>`<a href="${h}"${h===cur?' aria-current="page"':""}>${t}${e?`<small>${e}</small>`:""}</a>`;
@@ -17,7 +17,7 @@ if(cur==="index.html")document.querySelector("header.top").insertAdjacentHTML("a
 document.body.insertAdjacentHTML("beforeend",`<div class="band"><div class="wrap"><div><h2>विद्यालय में प्रवेश की जानकारी</h2><p>आओ देखो, फिर निर्णय लो। विद्यालय भ्रमण या जानकारी के लिए संपर्क करें।</p></div><div><a class="btn" href="admissions.html">प्रवेश जानकारी</a><a class="btn o" href="tel:${P}">☎ 88715 14166</a></div></div></div>
 <footer><div class="wrap"><div class="grid"><div><div class="fb"><img src="assets/img/rcvlgo-1.png" alt=""><h3>श्री रमेशचंद्र सोनी<br>आवासीय विद्यालय</h3></div>झाँसी–मिर्ज़ापुर हाईवे, रेलवे क्रॉसिंग के पास,<br>हरपालपुर – 471111, म.प्र.<br><a href="tel:${P}">88715 14166</a> · <a href="tel:+919039552145">90395 52145</a><br><a href="mailto:help@rcvschool.org">help@rcvschool.org</a></div>
 <div><h3>कार्यालय समय</h3>सोमवार – शनिवार<br>प्रातः 8:30 – सायं 4:30<br>Mon – Sat, 8:30 am – 4:30 pm</div>
-<div><h3>त्वरित लिंक</h3><ul><li><a href="about.html">About Us</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="boarding.html">Hostel</a></li><li><a href="results.html">Results</a></li></ul></div>
+<div><h3>त्वरित लिंक</h3><ul><li><a href="about.html">About Us</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="boarding.html">Hostel</a></li><li><a href="library.html">Tanishqe Library</a></li><li><a href="results.html">Results</a></li></ul></div>
 <div><h3>सहायता</h3><ul><li><a href="contact.html">Contact Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="https://maps.app.goo.gl/AuHjsQ93wWPY2Yj77">Google Maps</a></li></ul></div></div>
 <p class="copy">© <span id="copyright-year">2026</span> श्री रमेशचंद्र आवासीय विद्यालय, हरपालपुर · सर्वाधिकार सुरक्षित · वेबसाइट: <a href="https://abhisheksonijhon.github.io/Portfolio-Abhishek/">UMA &amp; SONS</a></p></div></footer>
 <div class="mb"><a href="tel:${P}">☎ कॉल करें</a><a href="admissions.html">प्रवेश</a><a href="https://wa.me/${P.slice(1)}">WhatsApp</a></div>

@@ -140,3 +140,15 @@ document.querySelectorAll(".gal img,.lab img").forEach(i=>i.onclick=()=>{lb.firs
   script.src = "/_vercel/insights/script.js";
   document.head.appendChild(script);
 })();
+
+/* Vercel Speed Insights: real-user Core Web Vitals.
+   Enable Speed Insights in the Vercel project dashboard to activate collection. */
+(() => {
+  window.si = window.si || function () {
+    (window.siq = window.siq || []).push(arguments);
+  };
+  const script = document.createElement("script");
+  script.defer = true;
+  script.src = "/_vercel/speed-insights/script.js";
+  document.head.appendChild(script);
+})();

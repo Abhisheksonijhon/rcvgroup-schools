@@ -1,0 +1,109 @@
+/* Tanishqe Library — a quiet, editorial extension of RCV's navy and gold theme */
+.library-page{--lib-ink:#17233f;--lib-navy:#102653;--lib-gold:#d6ad60;--lib-paper:#f8f6f0;--lib-muted:#687187;overflow:hidden}
+.library-page h1,.library-page h2,.library-page h3{color:var(--lib-navy)}
+.lib-hero{position:relative;background:var(--lib-paper);padding:clamp(38px,6vw,78px) 0 0;overflow:hidden}
+.lib-hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:clamp(26px,5vw,66px);padding-bottom:clamp(40px,6vw,72px)}
+.lib-eyebrow,.lib-kicker{font:600 11px/1.5 "Mukta",sans-serif;letter-spacing:.17em;color:#8b6b31}
+.lib-eyebrow{display:flex;align-items:center;gap:9px;margin-bottom:23px}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#bd9a54;box-shadow:0 0 0 4px #d6ad6028}
+.lib-brand-lockup{display:flex;align-items:center;gap:15px;margin-bottom:25px}
+.t-mark{width:57px;height:65px;border:1px solid #c7a15b;display:grid;place-items:center;position:relative;color:#9b773a;background:#fffdf8;box-shadow:5px 5px 0 #e9dfca}
+.t-mark span{font:400 45px/.9 Georgia,serif}
+.book-line{position:absolute;bottom:7px;width:29px;height:5px;border-bottom:1px solid #b28c4d;border-top:1px solid #b28c4d}
+.lib-brand-name{display:block;font:400 clamp(30px,4vw,42px)/1.05 Georgia,"Times New Roman",serif;letter-spacing:-.035em;color:var(--lib-navy)}
+.lib-brand-sub{display:block;margin-top:7px;font:600 9px/1.4 "Mukta",sans-serif;letter-spacing:.24em;color:#927344}
+.lib-copy h1{font-size:clamp(35px,4.6vw,58px);line-height:1.28;letter-spacing:-.025em;margin:0 0 17px}
+.lib-copy h1 em,.lib-section h2 em,.lib-quote-inner h2 em,.lib-membership h2 em{font-style:normal;color:#a27c3e}
+.lib-intro{max-width:49ch;font-size:17px;line-height:1.9;color:#5e6677}
+.lib-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}
+.lib-btn{display:inline-flex;align-items:center;justify-content:center;gap:17px;min-height:48px;padding:12px 19px;text-decoration:none;border-radius:3px;font-size:15px;font-weight:600;transition:transform .2s,box-shadow .2s,background .2s}
+.lib-btn:hover{transform:translateY(-2px)}
+.lib-btn.primary{background:var(--lib-navy);color:#fff;box-shadow:0 8px 18px #10265320}
+.lib-btn.primary:hover{background:#1a3975;box-shadow:0 10px 24px #10265330}
+.lib-btn.secondary{border:1px solid #d6d2c8;color:var(--lib-navy);background:#ffffff8a}
+.lib-btn.secondary:hover{background:#fff}
+.lib-proof{display:flex;align-items:center;gap:12px;margin-top:28px}
+.proof-icon{width:36px;height:36px;border-radius:50%;border:1px solid #d5bd8c;display:grid;place-items:center;color:#967039;font:22px Georgia,serif}
+.lib-proof b,.lib-proof small{display:block}
+.lib-proof b{font-size:15px;color:var(--lib-navy)}
+.lib-proof small{font-size:12px;color:var(--lib-muted)}
+.lib-visual{min-height:455px;position:relative;background:#e8e1d1;overflow:hidden;border:1px solid #e0d5bf;box-shadow:15px 15px 0 #e2d8c5}
+.visual-top{position:absolute;z-index:3;top:19px;left:21px;right:21px;display:flex;justify-content:space-between;color:#8c7857;font:600 9px "Mukta",sans-serif;letter-spacing:.15em}
+.window-glow{position:absolute;top:58px;left:12%;width:48%;height:43%;border:9px solid #d0c3a8;background:linear-gradient(135deg,#f8f6eb,#d6e0dc);box-shadow:inset 0 0 0 1px #fff9}
+.window-glow:before,.window-glow:after{content:"";position:absolute;background:#c4b89d}
+.window-glow:before{width:5px;height:100%;left:48%}
+.window-glow:after{height:5px;width:100%;top:49%}
+.study-illustration{position:absolute;inset:0;overflow:hidden}
+.shelf{position:absolute;right:8%;top:18%;width:25%;height:33%;border-left:5px solid #a78a60;border-right:5px solid #a78a60;border-top:5px solid #a78a60;background:repeating-linear-gradient(to bottom,transparent 0 31%,#a78a60 31% 33%)}
+.shelf i{display:inline-block;width:13%;height:35%;margin:4% 1% 0;background:#5e6d68;vertical-align:top}
+.shelf i:nth-child(2){background:#b18a52;height:30%}.shelf i:nth-child(3){background:#b8b9a8;height:34%}.shelf i:nth-child(4){background:#7c8d87;height:28%}.shelf i:nth-child(5){background:#9e755b;height:35%}.shelf i:nth-child(6){background:#d1c6a8;height:30%}
+.desk{position:absolute;left:9%;right:6%;bottom:20%;height:5%;background:#9e8055;box-shadow:0 7px 0 #7c6547}
+.desk:after{content:"";position:absolute;right:10%;top:100%;width:6px;height:95px;background:#98784d;box-shadow:-260px 0 #98784d}
+.book-stack{position:absolute;left:24%;bottom:25%;width:100px;height:38px;transform:rotate(-4deg)}
+.book-stack span{display:block;height:12px;margin-bottom:2px;background:#6d7b72;border-bottom:2px solid #e1d2b0}
+.book-stack span:nth-child(2){background:#b58b55;width:91%;margin-left:5%}.book-stack span:nth-child(3){background:#e7e0cc;width:84%;margin-left:9%}
+.lamp{position:absolute;right:24%;bottom:25%;width:60px;height:100px}
+.lamp i{position:absolute;left:27px;top:19px;width:5px;height:53px;background:#5c635d;transform:rotate(16deg);transform-origin:top}
+.lamp b{position:absolute;top:8px;left:8px;width:46px;height:28px;background:#c5a367;clip-path:polygon(24% 0,76% 0,100% 100%,0 100%);border-radius:3px}
+.lamp span{position:absolute;bottom:0;left:3px;width:51px;height:4px;background:#5c635d}
+.open-book{position:absolute;left:46%;bottom:25%;display:flex;width:82px;height:25px;transform:rotate(3deg)}
+.open-book i{flex:1;background:#fff8e9;border:1px solid #d4c5a6;transform:skewY(8deg)}
+.open-book i+i{transform:skewY(-8deg)}
+.plant{position:absolute;right:7%;bottom:25%;width:40px;height:65px}
+.plant b{position:absolute;bottom:0;left:8px;width:26px;height:25px;background:#b47d53;clip-path:polygon(10% 0,90% 0,100% 100%,0 100%)}
+.plant i{position:absolute;bottom:19px;left:17px;width:16px;height:31px;border-radius:100% 0 100% 0;background:#70836b;transform:rotate(-32deg)}
+.plant i:nth-child(2){left:5px;transform:rotate(-65deg);height:25px}.plant i:nth-child(3){left:21px;transform:rotate(24deg);height:27px}
+.chair{position:absolute;bottom:12%;left:42%;width:95px;height:70px;border:7px solid #7f8a80;border-bottom:0;border-radius:25px 25px 0 0;opacity:.7}
+.visual-note{position:absolute;z-index:4;bottom:0;left:0;right:0;background:#fffdf8;display:flex;align-items:center;gap:13px;padding:16px 20px;border-top:1px solid #d9cfba}
+.note-mark{font:italic 30px Georgia,serif;color:#a27c3e}
+.visual-note b,.visual-note small{display:block}.visual-note b{font:italic 16px Georgia,serif;color:var(--lib-navy)}.visual-note small{font-size:11px;letter-spacing:.08em;color:#8a8b85;margin-top:3px}
+.lib-hero-foot{display:flex;justify-content:space-between;gap:14px;border-top:1px solid #e3dccd;padding:13px max(20px,calc((100% - 1100px)/2));color:#978b75;font:600 9px "Mukta",sans-serif;letter-spacing:.15em}
+.lib-section{padding:clamp(55px,8vw,94px) 0;background:#fff}
+.lib-section-head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:34px}
+.lib-section-head h2,.lib-membership h2{font-size:clamp(30px,4vw,43px);margin-top:8px}
+.lib-section-head>p{max-width:37ch;color:var(--lib-muted);font-size:15px}
+.lib-facility-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #e6e5e0}
+.lib-facility{position:relative;padding:26px 23px 28px;min-height:225px;background:#fff;transition:background .2s}
+.lib-facility+.lib-facility{border-left:1px solid #e6e5e0}
+.lib-facility:hover{background:#fbf9f3}
+.facility-icon{display:grid;place-items:center;width:43px;height:43px;background:#f6f1e5;border:1px solid #e9dec5;color:#9d793e;font-size:28px}
+.facility-number{position:absolute;right:22px;top:27px;color:#b5b5ad;font:12px Georgia,serif}
+.lib-facility h3{font-size:20px;margin:23px 0 8px}
+.lib-facility p{font-size:14px;line-height:1.8;color:var(--lib-muted)}
+.lib-quote-band{background:var(--lib-navy);color:#fff;padding:clamp(48px,7vw,78px) 0;position:relative;overflow:hidden}
+.lib-quote-band:after{content:"T";position:absolute;right:4%;top:-95px;font:390px/.9 Georgia,serif;color:#ffffff08;pointer-events:none}
+.lib-quote-inner{display:grid;grid-template-columns:80px 1fr auto;gap:22px;align-items:center;position:relative;z-index:1}
+.quote-mark{font:120px/.8 Georgia,serif;color:var(--lib-gold);align-self:start}
+.lib-quote-inner .lib-kicker{color:#d7bd88}
+.lib-quote-inner h2{font-size:clamp(30px,4vw,46px);color:#fff;margin:10px 0 13px}
+.lib-quote-inner h2 em{color:#e0bd79}
+.lib-quote-inner p{color:#d3d9e6;font-size:15px}
+.quote-seal{width:106px;height:106px;border:1px solid #c4a25f;border-radius:50%;display:flex;align-items:center;justify-content:center;gap:8px;color:#e1c487}
+.quote-seal span{font:48px Georgia,serif}.quote-seal small{font:600 8px/1.8 "Mukta",sans-serif;letter-spacing:.15em}
+.lib-membership{background:var(--lib-paper)}
+.lib-membership-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(35px,8vw,100px);align-items:center}
+.lib-membership-grid>div>p{max-width:55ch;color:#5e6677;margin-top:18px}
+.lib-steps{display:grid;gap:0;margin-top:26px;max-width:510px}
+.lib-steps div{display:flex;align-items:center;gap:15px;padding:13px 0;border-bottom:1px solid #e4dece}
+.lib-steps b{font:italic 18px Georgia,serif;color:#aa854a}
+.lib-steps span{font-size:15px;color:#424d63}
+.fee-card{background:#fff;padding:28px clamp(22px,3vw,36px);border:1px solid #e3dac8;box-shadow:12px 12px 0 #e9e0cf}
+.fee-top{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #ece7dc;padding-bottom:18px;color:#9c7b45;font:600 9px "Mukta",sans-serif;letter-spacing:.16em}
+.fee-icon{display:grid;place-items:center;width:36px;height:36px;border:1px solid #c6a15e;color:#a27c3e;font:24px Georgia,serif}
+.fee-label{display:block;margin-top:25px;font-size:14px;color:var(--lib-muted)}
+.fee-amount{font:400 clamp(54px,7vw,76px)/1.15 Georgia,serif;color:var(--lib-navy);letter-spacing:-.05em}
+.fee-amount sup{font-size:.42em;vertical-align:top;position:relative;top:12px;margin-right:4px}
+.fee-card>p{font-size:13px;line-height:1.8;color:var(--lib-muted);margin:9px 0 22px}
+.lib-btn.full{width:100%}
+.lib-phone{display:block;text-align:center;margin-top:14px;text-decoration:none;font-size:13px;color:var(--lib-navy)}
+.fee-foot{text-align:center;border-top:1px solid #ece7dc;padding-top:17px;margin-top:23px;font:600 9px "Mukta",sans-serif;letter-spacing:.18em;color:#b39a6d}
+.lib-bottom-cta{background:#e9e0cd;padding:clamp(34px,5vw,54px) 0}
+.lib-bottom-cta>.wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.lib-bottom-cta .lib-kicker{color:#8a6b39}
+.lib-bottom-cta h2{font-size:clamp(27px,3.6vw,38px);margin:6px 0}
+.lib-bottom-cta p{font-size:14px;color:#596174}
+.lib-btn.dark{background:#fffdf8;color:var(--lib-navy);border:1px solid #d4c6aa;white-space:nowrap}
+@media(max-width:900px){.lib-hero-grid{grid-template-columns:1fr 1fr;gap:28px}.lib-visual{min-height:390px}.lib-facility-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lib-facility:nth-child(3){border-left:0;border-top:1px solid #e6e5e0}.lib-facility:nth-child(4){border-top:1px solid #e6e5e0}.lib-membership-grid{gap:35px}.lib-quote-inner{grid-template-columns:50px 1fr auto;gap:15px}.quote-seal{width:80px;height:80px}}
+@media(max-width:650px){.lib-hero{padding-top:36px}.lib-hero-grid{grid-template-columns:1fr;gap:32px}.lib-copy h1{font-size:clamp(35px,10vw,49px)}.lib-visual{min-height:370px;box-shadow:8px 8px 0 #e2d8c5}.lib-hero-foot{font-size:8px;letter-spacing:.07em;padding:12px 16px}.lib-section-head{display:block}.lib-section-head>p{margin-top:14px}.lib-facility-grid{grid-template-columns:1fr 1fr}.lib-facility{padding:20px 16px;min-height:220px}.lib-facility+.lib-facility{border-left:1px solid #e6e5e0}.lib-facility:nth-child(3){border-left:0}.lib-facility h3{font-size:18px}.lib-facility p{font-size:13px}.lib-quote-inner{grid-template-columns:30px 1fr}.quote-mark{font-size:75px}.quote-seal{display:none}.lib-membership-grid{grid-template-columns:1fr}.fee-card{max-width:460px;width:100%;margin:auto}.lib-bottom-cta>.wrap{align-items:flex-start;flex-direction:column}.lib-btn.dark{white-space:normal}}
+@media(max-width:370px){.lib-actions{flex-direction:column;align-items:stretch}.lib-actions .lib-btn{width:100%}.lib-facility{padding:17px 12px}.facility-number{right:12px}.lib-hero-foot span:nth-child(2){display:none}.lib-visual{min-height:330px}}
+@media(prefers-reduced-motion:reduce){.lib-btn,.lib-facility{transition:none}}

@@ -523,3 +523,12 @@ footer a,
  .footer-credit{flex-basis:100%;margin-top:2px}
 }
 @media(prefers-reduced-motion:reduce){.aarunya-ad-close{transition:none}}
+
+
+/* RCV sticky footer layout fix: keep footer at viewport bottom on short pages */
+html{min-height:100%;}
+body{display:flex;flex-direction:column;min-height:100vh;min-height:100svh;}
+body>main{flex:1 0 auto;width:100%;}
+body>footer{margin-top:auto;width:100%;}
+/* Keep shared header, callout and mobile dock in normal document flow. */
+@media(max-width:700px){body>main{flex:1 0 auto;}body>footer{padding-bottom:28px;}}

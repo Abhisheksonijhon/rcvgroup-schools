@@ -474,3 +474,52 @@ footer a,
 @keyframes aarunyaAdEnter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes aarunyaAdShimmer{0%,65%{transform:translateX(-100%)}85%,100%{transform:translateX(100%)}}@keyframes aarunyaAdPulse{0%,100%{opacity:.65;transform:scale(.88)}50%{opacity:1;transform:scale(1.15)}}
 @media(max-width:680px){.aarunya-ad-section{padding:22px 0 30px}.aarunya-ad{border-radius:16px;padding:18px 16px 15px}.aarunya-ad-top{align-items:flex-start}.aarunya-ad-sponsored,.aarunya-ad-partner{font-size:9px;letter-spacing:.1em}.aarunya-ad-content{grid-template-columns:1fr;gap:22px;padding:25px 0 22px}.aarunya-ad-copy h2{font-size:clamp(27px,8vw,36px)}.aarunya-ad-description{font-size:14px}.aarunya-ad-services{gap:6px;margin:15px 0 18px}.aarunya-ad-services span{font-size:10px}.aarunya-ad-actions{gap:12px}.aarunya-ad-cta{min-height:44px;padding:0 13px;font-size:12px}.aarunya-ad-brand{width:100%;min-height:0;padding:16px 12px;display:grid;grid-template-columns:44px auto;grid-template-rows:auto auto auto;column-gap:12px;justify-content:center;text-align:left}.aarunya-ad-brand-mark{grid-row:1/4;width:42px;height:42px;margin:0;font-size:27px;border-radius:12px}.aarunya-ad-brand strong{font-size:14px}.aarunya-ad-brand small{margin-top:2px}.aarunya-ad-brand-line{display:none}.aarunya-ad-brand-note{font-size:10px}.aarunya-ad-orbit{right:-160px;top:-100px;width:280px;height:280px}.aarunya-ad-footer{font-size:10px;gap:8px}.copy{line-height:1.9}}
 @media(prefers-reduced-motion:reduce){.aarunya-ad,.aarunya-ad:before,.aarunya-ad-orbit span,.aarunya-ad-sponsored i{animation:none!important}.aarunya-ad-cta,.aarunya-ad-brand{transition:none}}
+
+
+/* Banner compact wide format, accessible dismiss control, and responsive footer credit */
+.aarunya-ad-section{padding:22px 0 28px}
+.aarunya-ad{padding:17px 30px 13px;border-radius:16px}
+.aarunya-ad-top{padding-right:36px}
+.aarunya-ad-content{grid-template-columns:minmax(0,1fr) 150px;gap:18px;padding:15px 0 14px}
+.aarunya-ad-copy h2{font-size:clamp(24px,3vw,34px);margin-bottom:7px}
+.aarunya-ad-eyebrow{margin-bottom:7px;font-size:9px}
+.aarunya-ad-description{font-size:13px;line-height:1.55}
+.aarunya-ad-services{gap:6px;margin:11px 0 12px}
+.aarunya-ad-services span{font-size:10px;padding:5px 9px}
+.aarunya-ad-cta{min-height:39px;padding:0 13px;font-size:12px}
+.aarunya-ad-contact{font-size:12px}
+.aarunya-ad-brand{width:140px;min-height:126px;border-radius:14px}
+.aarunya-ad-icon-cluster{display:flex;align-items:center;justify-content:center;gap:5px;margin-bottom:10px}
+.aarunya-ad-icon-cluster span{display:grid;place-items:center;width:29px;height:29px;border:1px solid #ff9b5266;border-radius:9px;background:#ffffff0b;color:#ffad70;font-size:17px;font-weight:700}
+.aarunya-ad-icon-cluster span:nth-child(2){color:#8fc0ff;border-color:#2474df77}
+.aarunya-ad-icon-cluster span:nth-child(3){color:#fff}
+.aarunya-ad-brand strong{font-size:14px}
+.aarunya-ad-brand small{font-size:8px}
+.aarunya-ad-brand-note{margin-top:8px;font-size:9px}
+.aarunya-ad-brand-line{display:none}
+.aarunya-ad-close{position:absolute;right:11px;top:11px;z-index:5;display:grid;place-items:center;width:30px;height:30px;padding:0;border:1px solid #ffffff4d;border-radius:50%;background:#ffffff12;color:#fff;font:400 24px/1 Arial,sans-serif;cursor:pointer;transition:background .2s,transform .2s}
+.aarunya-ad-close:hover{background:#f47721;color:#111a32;transform:rotate(90deg)}
+.aarunya-ad-close:focus-visible{outline:3px solid #ffb36d;outline-offset:3px}
+.copy{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;column-gap:5px;row-gap:3px;text-align:center}
+.footer-credit{display:inline-flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:3px;line-height:1.8}
+@media(max-width:680px){
+ .aarunya-ad-section{padding:15px 0 20px}
+ .aarunya-ad{padding:15px 14px 12px;border-radius:14px}
+ .aarunya-ad-top{padding-right:32px}
+ .aarunya-ad-partner{max-width:130px;text-align:right}
+ .aarunya-ad-content{grid-template-columns:1fr;gap:12px;padding:13px 0 12px}
+ .aarunya-ad-copy h2{font-size:clamp(23px,7vw,29px);max-width:22ch}
+ .aarunya-ad-description{font-size:12px;line-height:1.55}
+ .aarunya-ad-services{margin:9px 0 11px}
+ .aarunya-ad-brand{width:100%;min-height:0;padding:10px 12px;display:grid;grid-template-columns:34px auto;grid-template-rows:auto auto auto;column-gap:10px;justify-content:center;text-align:left}
+ .aarunya-ad-icon-cluster{grid-row:1/4;display:grid;grid-template-columns:repeat(1,28px);margin:0}
+ .aarunya-ad-icon-cluster span{width:27px;height:27px;font-size:15px}
+ .aarunya-ad-icon-cluster span:nth-child(n+2){display:none}
+ .aarunya-ad-brand strong{font-size:13px}
+ .aarunya-ad-brand small{margin-top:1px}
+ .aarunya-ad-brand-note{margin-top:4px;font-size:9px}
+ .aarunya-ad-footer{gap:5px;font-size:10px}
+ .copy{padding-left:10px;padding-right:10px;font-size:13px;line-height:1.6}
+ .footer-credit{flex-basis:100%;margin-top:2px}
+}
+@media(prefers-reduced-motion:reduce){.aarunya-ad-close{transition:none}}

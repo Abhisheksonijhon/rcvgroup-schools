@@ -436,3 +436,15 @@ footer a,
     transform: none;
   }
 }
+
+
+/* Accessible, low-distraction homepage advertising slot.
+   Replace the inner placeholder with an approved ad-network unit when available. */
+.ad-reserve-section{padding:22px 0 34px;background:#fff}
+.ad-reserve{position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:96px;padding:20px 26px;border:1px dashed #c8cdd8;background:linear-gradient(105deg,#fafbfe,#f4f6fa);color:var(--ink,#172238)}
+.ad-reserve-label{position:absolute;top:6px;left:12px;font:600 9px/1.2 Arial,sans-serif;letter-spacing:.14em;color:#7b8495}
+.ad-reserve-copy{display:flex;flex-direction:column;gap:5px;padding-top:8px}
+.ad-reserve-copy b{font-size:16px;color:#34415a}
+.ad-reserve-copy span{font-size:12px;line-height:1.6;color:#687286}
+.ad-reserve-size{font:600 9px/1.4 Arial,sans-serif;letter-spacing:.12em;color:#8a94a6;white-space:nowrap}
+@media(max-width:600px){.ad-reserve-section{padding:16px 0 24px}.ad-reserve{min-height:94px;padding:24px 14px 14px;gap:8px;align-items:flex-start;flex-direction:column}.ad-reserve-size{font-size:8px}.ad-reserve-copy b{font-size:15px}.ad-reserve-copy span{font-size:12px}}

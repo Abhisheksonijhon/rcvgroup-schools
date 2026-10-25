@@ -19,7 +19,7 @@ document.body.insertAdjacentHTML("beforeend",`<div class="band"><div class="wrap
 <div><h3>Office Hours</h3>सोमवार – शनिवार<br>प्रातः 8:30 – सायं 4:30<br>Mon – Sat, 8:30 am – 4:30 pm</div>
 <div><h3>Quick Links</h3><ul><li><a href="about.html">About Us</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="boarding.html">Hostel</a></li><li><a href="library.html">Tanishqe Library</a></li><li><a href="results.html">Results</a></li></ul></div>
 <div><h3>Support</h3><ul><li><a href="contact.html">Contact Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="https://maps.app.goo.gl/AuHjsQ93wWPY2Yj77">Google Maps</a></li></ul></div></div>
-<p class="copy">© <span id="copyright-year">2026</span> Shri Rameshchandra Soni Residential School, Harpalpur. All rights reserved. Website developed by <a href="https://aarunyawebsolutions.com/" target="_blank" rel="noopener noreferrer" title="Aarunya Web Solutions — Website Design and Development">Aarunya Web Solutions</a>.</p></div></footer>
+<p class="copy">© <span id="copyright-year">2026</span> RCV Group Schools, Harpalpur. All rights reserved. <span class="footer-credit">Website developed by <a href="https://www.aarunyawebsolutions.com/" target="_blank" rel="noopener noreferrer" title="Aarunya Web Solutions — Website Design and Development">Aarunya Web Solutions</a>.</span></p></div></footer>
 <div class="mb"><a href="tel:${P}">☎ कॉल करें</a><a href="admissions.html">प्रवेश</a><a href="https://wa.me/${P.slice(1)}">WhatsApp</a></div>
 <div id="lb" role="dialog" aria-label="फ़ोटो"><img alt=""></div>`);
 const m=document.querySelector(".menu"),nv=document.getElementById("nv");
@@ -115,4 +115,15 @@ document.querySelectorAll(".gal img,.lab img").forEach(i=>i.onclick=()=>{lb.firs
     });
     observer.disconnect();
   }, 8000);
+})();
+
+/* Dismissible Aarunya sponsored banner */
+(() => {
+  const banner = document.getElementById("aarunya-sponsored-banner");
+  const close = banner?.querySelector(".aarunya-ad-close");
+  if (!banner || !close) return;
+  close.addEventListener("click", () => {
+    const section = banner.closest(".aarunya-ad-section");
+    if (section) section.remove();
+  });
 })();

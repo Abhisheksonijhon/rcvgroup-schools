@@ -127,3 +127,16 @@ document.querySelectorAll(".gal img,.lab img").forEach(i=>i.onclick=()=>{lb.firs
     if (section) section.remove();
   });
 })();
+
+
+/* Privacy-friendly Vercel Web Analytics for this static site.
+   Enable Web Analytics in the Vercel project dashboard for collection to begin. */
+(() => {
+  window.va = window.va || function () {
+    (window.vaq = window.vaq || []).push(arguments);
+  };
+  const script = document.createElement("script");
+  script.defer = true;
+  script.src = "/_vercel/insights/script.js";
+  document.head.appendChild(script);
+})();
